@@ -1,6 +1,46 @@
-.demo {
- 
-  
+.wrapper {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.flexContainer {
+  /** These three lines align the items in the center of the container on both axes. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /** You can decide which direction the items are laid out in.*/
+  flex-direction: row;
+
+  /** This is just for demo purposes. So you can see the container. */
+  min-height: 120px;
+  border: 2px dashed #999;
+  padding: 16px;
+}
+
+.demoItem {
+  /** Use a container for layout and place attributes on the item itself. */
+  width: 300px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.boxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  border: 2px solid blue;
+  text-decoration: underline;
+}
+
+.bigBox {
+  font-size: 2rem;
 }
