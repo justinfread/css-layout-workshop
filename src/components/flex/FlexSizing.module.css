@@ -58,7 +58,6 @@
 
 .shrinkContainer {
   display: flex;
-  resize: horizontal; /** Allows you to resize the container horizontally to see the effect. You might find other uses for it though. */
   overflow: auto;
   gap: 10px;
   border: 2px dashed #999;
