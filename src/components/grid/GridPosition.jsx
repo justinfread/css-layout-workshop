@@ -13,7 +13,6 @@ export default function GridPosition() {
 
       <div className={styles.gridContainer}>
         <div className={`${styles.box} ${styles.feature}`}>Featured Box</div>
-
         <div className={styles.box}>2</div>
         <div className={styles.box}>3</div>
         <div className={styles.box}>4</div>

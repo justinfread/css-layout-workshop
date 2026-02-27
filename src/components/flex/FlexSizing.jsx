@@ -24,8 +24,9 @@ export default function FlexSizing() {
       <h3>Flex Shrink</h3>
         <p>
           When the container is smaller than the items, flex-shrink controls how much
-          each item is allowed to shrink. Note the overflow in the yellow box when you 
-          resize the window.
+          each item is allowed to shrink. Sometimes it's very useful to put <br/>a logo or 
+          image in a container and give it <code>flex-shrink: 0</code> so it doesn't shrink and become 
+          unreadable. The other items will shrink around it.
         </p>
         <div className={styles.shrinkContainer}>
         <div className={styles.shrinkOne}>flex-shrink: 1</div>

@@ -1,0 +1,66 @@
+/**
+  Grid areas example.
+  Demonstrates grid-template-areas and named layout regions.
+*/
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.layout {
+  display: grid;
+
+  /** 3 columns: narrow sidebar + two content columns */
+  grid-template-columns: 220px 1fr 1fr;
+
+  /** 3 rows: header, main, footer !Never use hard-coded pixel values! */
+  grid-template-rows: 80px 240px 80px;
+
+  gap: 10px;
+
+  border: 2px dashed #999;
+  padding: 10px;
+
+  grid-template-areas:
+    "header header header"
+    "content content sidebar"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  background: lightblue;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: lightcoral;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  grid-area: content;
+  background: lightgreen;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  grid-area: footer;
+  background: gold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

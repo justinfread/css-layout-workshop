@@ -19,14 +19,12 @@
   grid-auto-rows: 90px;
 
   gap: 10px;
-
   border: 2px dashed #999;
   padding: 10px;
 }
 
 .box {
   background: lightblue;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,7 +32,6 @@
 
 .feature {
   background: lightcoral;
-
   /* Take up or Span 2 columns and 2 rows */
   grid-column: span 2;
   grid-row: span 2;
