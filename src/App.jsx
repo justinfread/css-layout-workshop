@@ -1,7 +1,7 @@
 import FlexBasics from "./components/flex/FlexBasics";
 import FlexSizing from "./components/flex/FlexSizing";
 import GridBasics from "./components/grid/GridBasics";
-//import GridAreas from "./components/grid/GridAreas";
+import GridPosition from "./components/grid/GridPosition";
 
 export default function App() {
   return (
@@ -18,7 +18,8 @@ export default function App() {
       <section>
         <h2 style={{ margin: "100px", borderTop: "3px dashed #000", padding: "20px" }}>Grid Basics</h2>
         <GridBasics />
-        {/*<GridAreas />*/}
+        <h2 style={{ margin: "100px", borderTop: "3px dashed #000", padding: "20px" }}>Grid Positioning</h2>
+        <GridPosition />
       </section> 
     </main>
   );

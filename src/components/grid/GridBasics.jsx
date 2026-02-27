@@ -5,8 +5,9 @@ export default function GridBasics() {
     <div className={styles.wrapper}>
       <h3>Basic Grid</h3>
       <p>
-        Grid allows you to define rows and columns explicitly. 
-        The <code>fr</code> unit distributes available space.
+        Grid allows you to define rows and columns explicitly. The <code>fr</code> unit<br/> 
+        distributes available space. fr stands for fractional unit. "fraction of available space".<br/>
+        <code>grid-template-columns: 1fr 1fr 1fr;</code>{"  "}would create 3 equal columns. <br/>
       </p>
 
       <div className={styles.gridContainer}>
