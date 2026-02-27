@@ -20,6 +20,18 @@ export default function FlexSizing() {
         <div className={styles.growTwo}>flex: 2</div>
         <div className={styles.growOne}>flex: 1</div>
       </div>
+
+      <h3>Flex Shrink</h3>
+        <p>
+          When the container is smaller than the items, flex-shrink controls how much
+          each item is allowed to shrink. Note the overflow in the yellow box when you 
+          resize the window.
+        </p>
+        <div className={styles.shrinkContainer}>
+        <div className={styles.shrinkOne}>flex-shrink: 1</div>
+        <div className={styles.shrinkZero}>flex-shrink: 0</div>
+        <div className={styles.shrinkTwo}>flex-shrink: 2</div>
+      </div>
     </div>
   );
 }

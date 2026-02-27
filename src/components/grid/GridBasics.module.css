@@ -1,0 +1,31 @@
+/**
+  Basic Grid example.
+  Demonstrates grid-template-columns, repeat(), and fr units.
+*/
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.gridContainer {
+  display: grid;
+
+  /* 3 equal columns */
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px;
+
+  border: 2px dashed #999;
+  padding: 10px;
+}
+
+.box {
+  height: 80px;
+  background: lightblue;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -37,23 +37,62 @@
 }
 
 .growOne {
-  flex: 1;
+  flex-grow: 1;
   background: lightblue;
   height: 80px;
 
-  /**Put the content in the center of the box */
   display: flex;
   align-items: center;
   justify-content: center; 
 }
 
 .growTwo {
-  flex: 2;
+  flex-grow: 2;
   background: steelblue;
   height: 80px;
 
-  /**Put the content in the center of the box */
   display: flex;
   align-items: center;
   justify-content: center; 
+}
+
+.shrinkContainer {
+  display: flex;
+  resize: horizontal;
+  overflow: auto;
+  gap: 10px;
+  border: 2px dashed #999;
+  padding: 10px;
+  /* Force overflow */
+  width: 550px;
+}
+
+.shrinkOne {
+  flex-basis: 200px; /* Start at 200px */
+  flex-shrink: 1; /* Shrinks 1 */
+  background: lightgreen;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shrinkZero {
+  flex-basis: 200px;
+  flex-shrink: 0; /* Will NOT shrink */
+  background: salmon;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shrinkTwo {
+  flex-basis: 200px;
+  flex-shrink: 2; /* Shrinks twice as much */
+  background: gold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,6 +1,6 @@
 import FlexBasics from "./components/flex/FlexBasics";
 import FlexSizing from "./components/flex/FlexSizing";
-//import GridBasic from "./components/grid/GridBasic";
+import GridBasics from "./components/grid/GridBasics";
 //import GridAreas from "./components/grid/GridAreas";
 
 export default function App() {
@@ -15,11 +15,11 @@ export default function App() {
         <FlexSizing /> 
       </section>
 
-      {/*<section>
-        <h2>Grid Basics</h2>
-        <GridBasic />
-        <GridAreas />
-      </section> */}
+      <section>
+        <h2 style={{ margin: "100px", borderTop: "3px dashed #000", padding: "20px" }}>Grid Basics</h2>
+        <GridBasics />
+        {/*<GridAreas />*/}
+      </section> 
     </main>
   );
 }
