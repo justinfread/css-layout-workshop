@@ -1,0 +1,59 @@
+/**
+  Some examples of flexbox sizing properties: flex-shrink, flex-grow, and flex-wrap. 
+  Some of this example does not demonstrate best practices or how to set up a real layout. 
+  It is meant to show how the properties work.
+*/
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.wrapContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border: 2px dashed #999;
+  padding: 10px;
+}
+
+.box {
+  width: 150px;
+  height: 80px;
+  background: lightcoral;
+
+  /**Put the numbers in the center of the box */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.growContainer {
+  display: flex;
+  gap: 10px;
+  border: 2px dashed #999;
+  padding: 10px;
+}
+
+.growOne {
+  flex: 1;
+  background: lightblue;
+  height: 80px;
+
+  /**Put the content in the center of the box */
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.growTwo {
+  flex: 2;
+  background: steelblue;
+  height: 80px;
+
+  /**Put the content in the center of the box */
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}

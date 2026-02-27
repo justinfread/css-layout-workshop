@@ -1,5 +1,5 @@
 import FlexBasics from "./components/flex/FlexBasics";
-//import FlexWrap from "./components/flex/FlexWrapDemo";
+import FlexSizing from "./components/flex/FlexSizing";
 //import GridBasic from "./components/grid/GridBasic";
 //import GridAreas from "./components/grid/GridAreas";
 
@@ -9,9 +9,10 @@ export default function App() {
       <h1>CSS Layout Workshop</h1>
 
       <section>
-        <h2>Flexbox Basics</h2>
+        <h2 style={{ margin: "100px", borderTop: "3px dashed #000", padding: "20px" }}>Flexbox Basics</h2>
         <FlexBasics />
-        {/* <FlexWrap /> */}
+        <h2 style={{ margin: "100px", borderTop: "3px dashed #000", padding: "20px" }}>Flexbox Shrink, Grow, and Wrap</h2>
+        <FlexSizing /> 
       </section>
 
       {/*<section>
