@@ -3,6 +3,8 @@ import FlexSizing from "./components/flex/FlexSizing";
 import GridBasics from "./components/grid/GridBasics";
 import GridPosition from "./components/grid/GridPosition";
 import GridAreas from "./components/grid/GridAreas";
+import PracticeFlex from "./components/practice/PracticeFlex";
+import PracticeGrid from "./components/practice/PracticeGrid";
 
 export default function App() {
   return (
@@ -24,6 +26,13 @@ export default function App() {
         <h2 style={{ margin: "100px", borderTop: "3px dashed #000", padding: "20px" }}>Grid Areas</h2>
         <GridAreas />
       </section> 
+
+      <section>
+        <h2 style={{ margin: "100px", borderTop: "3px dashed #000", padding: "20px" }}>Practice Flex</h2>
+        <PracticeFlex />
+        <h2 style={{ margin: "100px", borderTop: "3px dashed #000", padding: "20px" }}>Practice Grid</h2>
+        <PracticeGrid />
+      </section>
     </main>
   );
 }

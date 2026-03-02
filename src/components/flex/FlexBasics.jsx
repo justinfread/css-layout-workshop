@@ -16,7 +16,7 @@ export default function FlexBasics() {
         Because the boxes are aligned horizontally, by default flex-direction is row,<br/>
         justify-content controls alignment on the main axis (in this case horizontal).<br/>
         So align-items controls alignment on the cross axis (vertical in this case).<br/>
-        When align-items is set to baseline, and attribute of the text, bigBox is aligned<br/>
+        When align-items is set to baseline, an attribute of the text, bigBox is aligned<br/>
         higher in the container.
       </p>
       <div className={styles.boxContainer}>
